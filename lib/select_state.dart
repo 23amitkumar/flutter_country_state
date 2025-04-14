@@ -17,22 +17,6 @@ class stateFunction {
       case 'Andorra':
         StateDialogs.stateItems.addAll(Andorra.states);
         break;
-      case 'Afghanistan':
-        
-        StateDialogs.stateItems.addAll(Afghanistan.states);
-        break;
-      case 'Albania':
-        
-        StateDialogs.stateItems.addAll(Albania.states);
-        break;
-      case 'Algeria':
-        
-        StateDialogs.stateItems.addAll(Algeria.states);
-        break;
-      case 'Andorra':
-        
-        StateDialogs.stateItems.addAll(Andorra.states);
-        break;
       case 'Angola':
         
         StateDialogs.stateItems.addAll(Angola.states);
@@ -824,10 +808,6 @@ class stateFunction {
       case 'Tunisia':
         
         StateDialogs.stateItems.addAll(Tunisia.states);
-        break;
-      case 'Turkey':
-        
-        StateDialogs.stateItems.addAll(Turkey.states);
         break;
       case 'Turkmenistan':
         
