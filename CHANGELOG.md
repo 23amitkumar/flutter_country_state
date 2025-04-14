@@ -1,3 +1,10 @@
+<h1>1.0.1</h1>
+<hr>
+<ul>
+<li>Modified Mexico States</li>
+<li>Upgraded the dart SDK</li>
+</ul>
+
 <h1>1.0.0</h1>
 <hr>
 <ul>
