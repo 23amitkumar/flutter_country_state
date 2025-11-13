@@ -109,7 +109,7 @@ class _ShowCityDialogState extends State<ShowCityDialog> {
               style: widget.countryHeaderStyle?? TextStyle(fontSize: 20)),
         ),
         Visibility(
-          visible: widget.showSearch,
+          visible: widget.showSearch == true,
           child:Padding(
           padding: EdgeInsets.only(left: 8.0, right: 8.0, top: 20),
           child: TextField(
