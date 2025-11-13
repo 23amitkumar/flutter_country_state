@@ -20,6 +20,7 @@ class ShowCityDialog extends StatefulWidget {
      this.countryHeaderStyle,
     this.inputDecoration,
     this.closeIcon,
+    this.showSearch = true
   });
 
   final Color? substringBackground;
@@ -34,6 +35,7 @@ class ShowCityDialog extends StatefulWidget {
   final Color? notSelectedCityBackgroundColor;
   final VoidCallback onSelectedCity;
   final Widget? closeIcon;
+  final bool? showSearch;
   @override
   _ShowCityDialogState createState() => _ShowCityDialogState();
 }
@@ -106,7 +108,9 @@ class _ShowCityDialogState extends State<ShowCityDialog> {
           child: Text(widget.cityListTitle??"Cities found in ${Selected.state}".toUpperCase(),
               style: widget.countryHeaderStyle?? TextStyle(fontSize: 20)),
         ),
-        Padding(
+        Visibility(
+          visible: widget.showSearch,
+          child:Padding(
           padding: EdgeInsets.only(left: 8.0, right: 8.0, top: 20),
           child: TextField(
             style: widget.searchStyle??TextStyle(fontSize: 16),
@@ -117,7 +121,7 @@ class _ShowCityDialogState extends State<ShowCityDialog> {
               border: OutlineInputBorder(borderRadius: BorderRadius.circular(32.0)),
             ),
           ),
-        ),
+        )),
         Expanded(
           child: ListView(
             children: [
